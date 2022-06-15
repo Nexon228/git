@@ -2,6 +2,7 @@ body{
     background-color: rgb(83, 83, 83);
     color:rgb(244, 237, 237);
     font-size: 20px;
+    user-select: none;
 }
 
 .navbar{
@@ -9,6 +10,7 @@ body{
     justify-content: space-between;
     max-width: 600px;
     margin: auto;
+    border-bottom: 1px solid rgb(244, 237, 237);
 }
 
 .rest{
@@ -19,7 +21,14 @@ body{
 .navbar-links{
     margin: 5px;
     min-width: 75px;
+    padding: 5px 0px 5px 0px;
     text-align: center;
+
+}
+
+.navbar-links:hover{
+    background-color:rgb(108, 108, 108) ;
+    cursor: pointer;
 }
 
 .logo{
