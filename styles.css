@@ -1,3 +1,55 @@
 body{
-    background-color: aqua;
+    background-color: rgb(83, 83, 83);
+    color:rgb(244, 237, 237);
+    font-size: 20px;
 }
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: auto;
+}
+
+.rest{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.navbar-links{
+    margin: 5px;
+    min-width: 75px;
+    text-align: center;
+}
+
+.logo{
+    align-self:flex-start;
+}
+
+.hidden{
+    display: none;
+    position: absolute;
+    right: 15px;
+    top:15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        flex-direction: column;
+    }
+
+    .logo{
+        align-self: center;
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    .rest{
+        display: none;
+    }
+
+    .hidden{
+        display: block;
+    }
+  
+  }
